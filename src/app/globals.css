@@ -2,26 +2,56 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.special-t{
+  font-family: var(--font-fraunces);
+}
+
+.normal-t{
+    font-size: 14px;
+    font-family: var(--font-montserrat);
+}
+
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #F3EBE4;
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+
+  .strike-line{
+ 
+    content: "";
+    width:  3.8rem;
+    height: 1.5px;
+    background-color: #8e8e8e;
+    position: absolute;
+    top: 55%;
+    left: 0;
+  }
+
+  .icon-cart {
+    width: 18px;
+    height: 18px;
+    background: url('./assets/icon-cart.svg') no-repeat center;
+    background-size: contain;
+  }
+  
+  
+  @media (min-width:768px) {
+    body{
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #F3EBE4;
+    }
+  }
