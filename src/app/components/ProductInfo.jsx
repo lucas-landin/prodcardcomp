@@ -11,7 +11,7 @@ const ProductInfo = ( ) => {
               <p className="text-grayish-blue text-lg "><span className="strike-line"/>$169.99</p>
               </div>
             </div>
-            <button className=" bg-light-green text-white p-4 rounded-xl w-full flex items-center justify-center gap-4 font-bold text-lg hover:bg-[#275443]">
+            <button className=" bg-light-green text-white p-4 rounded-xl w-full flex items-center justify-center gap-4 font-bold text-lg hover:bg-[#275443] mb-4">
                <div className={"icon-cart"}></div>Add to cart
               </button>
            </div>
